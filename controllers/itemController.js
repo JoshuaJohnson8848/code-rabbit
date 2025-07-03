@@ -4,7 +4,12 @@ let items = [
   { id: 2, name: 'Item 2', description: 'Description for item 2', price: 20, category: 'Category B' },
   { id: 3, name: 'Item 3', description: 'Description for item 3', price: 30, category: 'Category A' },
   { id: 4, name: 'Item 4', description: 'Description for item 4', price: 40, category: 'Category B' },
-  { id: 5, name: 'Item 5', description: 'Description for item 5', price: 50, category: 'Category A' }
+  { id: 5, name: 'Item 5', description: 'Description for item 5', price: 50, category: 'Category A' },
+  { id: 6, name: 'Item 6', description: 'Description for item 6', price: 60, category: 'Category C' },
+  { id: 7, name: 'Item 7', description: 'Description for item 7', price: 70, category: 'Category D' },
+  { id: 8, name: 'Item 8', description: 'Description for item 8', price: 80, category: 'Category C' },
+  { id: 9, name: 'Item 9', description: 'Description for item 9', price: 90, category: 'Category D' },
+  { id: 10, name: 'Item 10', description: 'Description for item 10', price: 100, category: 'Category E' }
 ];
 
 const getItems = (req, res) => {
