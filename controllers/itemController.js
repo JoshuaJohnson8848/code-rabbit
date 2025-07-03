@@ -1,8 +1,8 @@
 
 let items = [
-  { id: 1, name: 'Item 1' },
-  { id: 2, name: 'Item 2' },
-  { id: 3, name: 'Item 3' }
+  { id: 1, name: 'Item 1', description: 'Description for item 1', price: 10, category: 'Category A' },
+  { id: 2, name: 'Item 2', description: 'Description for item 2', price: 20, category: 'Category B' },
+  { id: 3, name: 'Item 3', description: 'Description for item 3', price: 30, category: 'Category A' }
 ];
 
 const getItems = (req, res) => {
@@ -18,7 +18,10 @@ const getItemById = (req, res) => {
 const createItem = (req, res) => {
   const newItem = {
     id: items.length + 1,
-    name: req.body.name
+    name: req.body.name,
+    description: req.body.description,
+    price: req.body.price,
+    category: req.body.category
   };
   items.push(newItem);
   res.status(201).json(newItem);
